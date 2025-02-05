@@ -26,7 +26,6 @@ export const Footer = () => {
     <footer className="relative bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 py-4 px-6">
       <div className="max-w-6xl mx-auto pt-10 border-t border-gray-300 dark:border-gray-700 w-3/4"></div>
 
-      {/* Footer Content */}
       <div className="max-w-6xl mx-auto text-center border-b border-gray-300 dark:border-gray-700 w-3/4 pb-10 mt-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {itemsArr.map((block, index) => (
@@ -52,7 +51,6 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto pt-6 text-center w-3/4">
         <p className="text-sm text-gray-500 dark:text-gray-400">
           © {new Date().getFullYear()} Made by Moroni. All rights reserved.  

@@ -5,7 +5,7 @@ import illustration1 from "../../../../public/illustration1.svg";
 import illustration2 from "../../../../public/illustration2.svg";
 import illustration3 from "../../../../public/illustration3.svg";
 import Image from "next/image";
-import Transition from "../Transition";
+import Transition from "../hooks/Transition";
 
 import { FaBoltLightning } from "react-icons/fa6";
 import { IoPaperPlane } from "react-icons/io5";

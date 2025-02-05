@@ -103,6 +103,7 @@ export default function ProductPage() {
                 alt={product.title}
                 width={600}
                 height={600}
+                priority
                 className="object-cover rounded-md transition-transform duration-300 transform group-hover:scale-110"
               />
             </div>
@@ -111,7 +112,7 @@ export default function ProductPage() {
             {product.images.map((image, index) => (
               <div
                 key={index}
-                className="relative group  cursor-pointer"
+                className="relative group cursor-pointer"
                 onClick={() => handleImageClick(image)}
               >
                 <Image

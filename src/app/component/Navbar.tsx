@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { LogIn, UserPlus, Moon, Sun, Menu, Rocket } from "lucide-react"; // Use icons for a cleaner look
+import useDarkMode from "./hooks/useDarkMode";
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   const navLinksArr = [
     { to: "/", label: "Home" },
     { to: "/pages/products", label: "Products" },
     { to: "/pages/about", label: "About" },
   ];
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle("dark");
-  };
 
   return (
     <nav className="bg-gradient-to-b from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 text-grayshade-500 dark:text-white shadow-lg fixed w-full top-0 left-0 z-50">
@@ -28,7 +24,6 @@ export const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Links */}
         <ul className="hidden md:flex gap-6">
           {navLinksArr.map((el, key) => (
             <li key={key}>
@@ -42,7 +37,6 @@ export const Navbar = () => {
           ))}
         </ul>
 
-        {/* Actions */}
         <div className="flex items-center gap-4">
           <Link
             href="/pages/login"
@@ -67,7 +61,7 @@ export const Navbar = () => {
           >
             {isDarkMode ? <Moon size={20} /> : <Sun size={20} />}
           </button>
-          {/* Mobile Menu Button */}
+          {/* mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="block md:hidden p-2 text-blue-400"
@@ -78,7 +72,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* mobile menu */}
       {mobileMenuOpen && (
         <div className="md:hidden dark:bg-gray-800 dark:text-white px-6 py-4 w-full">
           <ul className="space-y-4">

@@ -7,7 +7,6 @@ export const DevProcessSec = () => {
       className="relative bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 p-10 z-10"
       data-aos="fade-up"
     >
-      {/* Section Header */}
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
         <h2 className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-4">
           How Simple Works

@@ -10,7 +10,7 @@ import { Footer } from "../component/Footer";
 
 export const Home = () => {
   return (
-    <div>
+    <div className="dark:bg-gray-800">
       <Navbar />
       <HeaderHome />
       <SolutionsSec />
