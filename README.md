@@ -18,6 +18,8 @@ This is a modern E-Commerce Web Application built using Next.js. The application
 
 - **AOS** (Animate on Scroll) – Smooth animations.
 
+-  **Local Storage** - Client-side storage solution that allows web applications to store key-value data persistently in the user's browser.
+
 ### Backend & Database
 
 - **MongoDB** – NoSQL database for storing product and user data.
