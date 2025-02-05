@@ -57,3 +57,5 @@ This is a modern E-Commerce Web Application built using Next.js. The application
 ✅ Product Filtering – Browse by categories like Electronics, Furniture, Clothing, etc.✅ Search Functionality – Quick product search with a search bar.✅ Responsive Design – Fully optimized for desktop and mobile users.✅ Cart & Checkout (Coming Soon) – Adding products to the cart and a seamless checkout process.✅ Dark Mode Support – UI adapts to system preferences.✅ Server-Side & Client-Side Rendering – Optimized for performance.
 
 ## 🌍 Deployment 
+
+https://novamart-ashen.vercel.app/
