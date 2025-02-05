@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js E-Commerce Project
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+This is a modern E-Commerce Web Application built using Next.js. The application provides a seamless shopping experience with category-based filtering, product search, and a fully responsive UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** – React framework for server-side rendering and static site generation.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **React** – Component-based UI library.
 
-## Learn More
+- **Typescript** - Strongly typed JavaScript for better maintainability and scalability.
 
-To learn more about Next.js, take a look at the following resources:
+- **Tailwind CSS** – Utility-first CSS framework for styling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **AOS** (Animate on Scroll) – Smooth animations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Backend & Database
 
-## Deploy on Vercel
+- **MongoDB** – NoSQL database for storing product and user data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Mongoose** – ODM library for interacting with MongoDB.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **API Routes** (Next.js) – Serverless backend using Next.js API routes.
+
+### API Integration
+
+- **RESTful API** – Fetching products, categories, and handling user authentication.
+
+- **Custom API Endpoints** – Built with Next.js API routes for handling data operations.
+
+- **Provider Pattern** – Global state management for cart and authentication.
+
+### Authentication & Security
+
+- **NextAuth.js** – Authentication solution for Next.js applications.
+
+- **Environment Variables** (.env) – Secure API keys and database credentials.
+
+### Icons & Assets
+
+- **Custom SVG Icons** – Used for categories and UI elements.
+
+- **Lucide-React / HeroIcons** – Additional icon sets.
+
+### Version Control & Deployment
+
+- **Git** – Version control and repository hosting.
+
+- **Vercel** – Deployment platform for Next.js applications.
+
+## 🔧 Features
+
+✅ Product Filtering – Browse by categories like Electronics, Furniture, Clothing, etc.✅ Search Functionality – Quick product search with a search bar.✅ Responsive Design – Fully optimized for desktop and mobile users.✅ Cart & Checkout (Coming Soon) – Adding products to the cart and a seamless checkout process.✅ Dark Mode Support – UI adapts to system preferences.✅ Server-Side & Client-Side Rendering – Optimized for performance.
+
+## 🌍 Deployment 
