@@ -92,10 +92,10 @@ export default function ProductsPage() {
           <div className="flex justify-center gap-6 md:gap-8 flex-wrap">
             {[
               "All",
-              "Electronics",
+              "Clothes",
               "Furniture",
               "Shoes",
-              "Clothes",
+              "Electronics",
               "Miscellaneous",
             ].map((category) => (
               <button
@@ -108,11 +108,11 @@ export default function ProductsPage() {
                 onClick={() => setSelectedCategory(category)}
               >
                 {category === "All" && <PlusIcon />}
+                {category === "Clothes" && <ClothesIcon />}
                 {category === "Electronics" && <SmartphoneIcon />}
                 {category === "Furniture" && <FurnitureIcon />}
                 {category === "Shoes" && <ShoesIcon />}
                 {category === "Miscellaneous" && <MiscellaneousIcon />}
-                {category === "Clothes" && <ClothesIcon />}
                 <span>{category}</span>
               </button>
             ))}

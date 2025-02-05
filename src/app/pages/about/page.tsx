@@ -15,7 +15,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
+    <div className="min-h-screen w-screen overflow-x-hidden bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
       <div>
         <Navbar />
       </div>

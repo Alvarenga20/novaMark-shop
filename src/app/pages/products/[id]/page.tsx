@@ -27,11 +27,11 @@ export default function ProductPage() {
 
   useEffect(() => {
     if (id) {
-      console.log("Fetching product with ID:", id);
+      // console.log("Fetching product with ID:", id);
       async function loadProduct() {
         try {
           const productData = await fetchProductById(id);
-          console.log("Product data:", productData);
+          // console.log("Product data:", productData);
           if (productData && productData.images?.length > 0) {
             setProduct(productData);
             setMainImage(productData.images[0]);
@@ -49,7 +49,7 @@ export default function ProductPage() {
   };
 
   const handleAddToCart = () => {
-    console.log(`Product ${product?.title} added to cart.`);
+    // console.log(`Product ${product?.title} added to cart.`);
   };
 
   const handleImageClick = (image: string) => {

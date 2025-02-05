@@ -14,7 +14,6 @@ export const ClientFeedback = () => {
 
   return (
     <section className="relative py-20 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-      {/* Decorative Background Circles - Place Above the Background */}
       <div className="relative">
         <div className="absolute z-20 left-0 right-0 -top-24 m-auto w-px p-px h-20 bg-gray-200 dark:bg-white"></div>
       </div>

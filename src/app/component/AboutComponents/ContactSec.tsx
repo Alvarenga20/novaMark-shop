@@ -7,7 +7,7 @@ export const ContactSec = () => {
       className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 shadow-lg rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-16"
       data-aos="fade-left"
     >
-      {/* Text Section */}
+
       <div className="flex-1 text-center md:text-left">
         <h2 className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-4">
           Get in Touch
@@ -37,14 +37,13 @@ export const ContactSec = () => {
         </a>
       </div>
 
-      {/* Image Section */}
       <div className="md:mr-8">
         <div className="relative w-64 h-64 md:w-80 md:h-80">
           <Image
             src="/contactus.svg"
             alt="Contact Us Illustration"
-            layout="fill"
-            objectFit="contain"
+            fill
+            style={{ objectFit: "contain" }}
             className="rounded-lg"
           />
         </div>

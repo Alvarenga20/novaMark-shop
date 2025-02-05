@@ -18,8 +18,8 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-b from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 text-grayshade-500 dark:text-white shadow-lg fixed w-full top-0 left-0 z-50 max-w-screen">
-      <div className="w-full max-w-7xl mx-auto flex justify-between items-center px-6 py-4 ">
+    <nav className="bg-gradient-to-b from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 text-grayshade-500 dark:text-white shadow-lg fixed w-full top-0 left-0 z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 ">
         {/* Logo */}
         <div className="flex text-md md:text-xl items-center gap-2">
           <Rocket className="text-blue-400 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />

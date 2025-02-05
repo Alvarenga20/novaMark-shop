@@ -1,21 +1,19 @@
 import { MongoClient } from "mongodb";
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/alvarenga20"; // Your URI here
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/alvarenga20";
 
 const client = new MongoClient(MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  serverSelectionTimeoutMS: 30000,
+  serverSelectionTimeoutMS: 30000, 
 });
 
 let clientPromise: Promise<MongoClient>;
 
 if (process.env.NODE_ENV === "development") {
-  if (globalThis.mongoClient) {
-    clientPromise = globalThis.mongoClient;
+  if (mongoClient) {
+    clientPromise = mongoClient;
   } else {
     clientPromise = client.connect();
-    globalThis.mongoClient = clientPromise;
+    mongoClient = clientPromise;
   }
 } else {
   clientPromise = client.connect();

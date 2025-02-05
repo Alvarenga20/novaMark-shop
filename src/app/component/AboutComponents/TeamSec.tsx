@@ -44,8 +44,8 @@ export const TeamSec = () => {
               <Image
                 src={member.image}
                 alt={member.name}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
                 className="rounded-full"
               />
             </div>
@@ -61,7 +61,7 @@ export const TeamSec = () => {
               rel="noopener noreferrer"
               className="flex items-center text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300"
             >
-                {/* insta Icon */}
+              {/* insta Icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 mr-2"
