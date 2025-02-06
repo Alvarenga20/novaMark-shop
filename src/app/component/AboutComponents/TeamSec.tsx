@@ -45,7 +45,7 @@ export const TeamSec = () => {
                 src={member.image}
                 alt={member.name}
                 fill
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", objectPosition: "top" }}
                 className="rounded-full"
               />
             </div>

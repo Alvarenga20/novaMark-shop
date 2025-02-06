@@ -19,7 +19,10 @@ export const Navbar = () => {
         {/* Logo */}
         <div className="flex text-md md:text-xl items-center gap-2">
           <Rocket className="text-blue-400 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
-          <Link href="/" className="font-bold text-grayshade-500 dark:text-white">
+          <Link
+            href="/"
+            className="font-bold text-grayshade-500 dark:text-white"
+          >
             NovaMart<span className="text-blue-400">.</span>
           </Link>
         </div>
@@ -37,10 +40,10 @@ export const Navbar = () => {
           ))}
         </ul>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 w-full md:w-auto">
           <Link
             href="/pages/login"
-            className="text-sm md:text-lg hover:text-blue-400 transition flex items-center gap-2"
+            className="text-sm md:text-lg hover:text-blue-400 transition flex items-center gap-2 ml-auto"
           >
             <LogIn size={20} />
             Login
@@ -48,7 +51,7 @@ export const Navbar = () => {
 
           <Link
             href="/pages/signup"
-            className="text-sm md:text-lg px-1 md:px-4 py-2 rounded-md hover:bg-blue-400 dark:hover:bg-blue-600 transition flex items-center gap-2"
+            className="text-sm md:text-lg md:px-4 py-2 rounded-md hover:bg-blue-400 dark:hover:bg-blue-600 transition flex items-center gap-2"
           >
             <UserPlus size={20} />
             Sign Up
@@ -61,10 +64,10 @@ export const Navbar = () => {
           >
             {isDarkMode ? <Moon size={20} /> : <Sun size={20} />}
           </button>
-          {/* mobile menu button */}
+
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="block md:hidden p-2 text-blue-400"
+            className="block md:hidden text-blue-400"
             aria-label="Open Mobile Menu"
           >
             <Menu size={24} />

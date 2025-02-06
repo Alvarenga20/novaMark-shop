@@ -47,7 +47,7 @@ export const Newsletter = () => {
 
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Circle
-            className="absolute top-[50%] left-[-20%] w-64 h-64 opacity-30"
+            className="absolute top-[50%] left-[-20%] w-64 h-64 opacity-30 hidden md:block"
             radius={90}
             fillLight="#A2DFF7"
             fillDark="#1E293B"
@@ -59,13 +59,13 @@ export const Newsletter = () => {
             fillDark="#334155"
           />
           <Circle
-            className="absolute bottom-20 right-[-21%] w-64 h-64 opacity-60"
+            className="absolute bottom-[26%] right-[-21%] w-64 h-64 opacity-60"
             radius={67}
             fillLight="#ddf5ff"
             fillDark="#475569"
           />
           <Circle
-            className="absolute bottom-[50%] right-[50%] w-64 h-64 opacity-80 hidden sm:block"
+            className="absolute bottom-[50%] right-[50%] w-64 h-64 opacity-99 hidden sm:block"
             radius={50}
             fillLight="#E1F6FF"
             fillDark="#64748B"
@@ -75,6 +75,12 @@ export const Newsletter = () => {
             radius={67}
             fillLight="#ddf5ff"
             fillDark="#475569"
+          />
+          <Circle
+            className="absolute top-[99%] left-[-20%] w-64 h-64 opacity-30 md:hidden"
+            radius={90}
+            fillLight="#A2DFF7"
+            fillDark="#1E293B"
           />
         </div>
       </div>
