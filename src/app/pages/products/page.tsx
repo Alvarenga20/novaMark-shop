@@ -146,7 +146,7 @@ export default function ProductsPage() {
                   Read More
                 </Link>
               </p>
-              <div className="max-w-fit text-gray-600 text-sm font-semibold bg-gray-200 dark:bg-gray-700 rounded-full px-4 py-1 mb-4">
+              <div className="max-w-fit text-gray-600 text-sm font-semibold bg-gray-200 dark:bg-gray-700 dark:text-white rounded-full px-4 py-1 mb-4">
                 {product.category.name}
               </div>
               <div className="flex justify-between w-full items-center">
